@@ -2,7 +2,7 @@ const { Router } = require("express");
 const controller = require("../controllers/eventos.controller");
 
 const router = Router();
-
+ 
 router.get("/", controller.listar);
 router.get("/:id", controller.detalhar);
 router.post("/", controller.criar);
